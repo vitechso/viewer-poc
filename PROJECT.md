@@ -33,7 +33,7 @@ The panel was a part of a proof-of-concept project but now we need to start prop
  
 ## What you GET:
 * This codebase containing the current app/panel
-  * *Create a branch for your work when you have something to commit*
+  * *Create a fork for your work when you have something to commit*
 * Access to a design document in Figma
   * [App Design](https://www.figma.com/file/M2dLKLSK4GH9ReQb0R2vOH/Quick-Lookup-Graph-Viewer?node-id=0%3A1)
 * Access to a short video that shows you the test document setup and QL functionality
