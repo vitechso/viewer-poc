@@ -36,7 +36,7 @@ const nextConfig = {
         return config
       },
     env: {
-    BACKEND_URL: 'https://localhost:8800',
+    BACKEND_URL: 'https://localhost:3000',
   },
 //   devtool: "source-map",
 };
