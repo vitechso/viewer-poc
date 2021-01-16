@@ -1,0 +1,1 @@
+tsc .\components\excel\functions.ts -t es5 --outDir .\public\scripts --jsx preserve

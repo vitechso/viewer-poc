@@ -1,0 +1,184 @@
+{
+    "functions": [
+        {
+            "description": "* Fuzzy Matching",
+            "id": "FUZZY",
+            "name": "FUZZY",
+            "options": {
+                "requiresAddress": true
+            },
+            "parameters": [
+                {
+                    "name": "entityType",
+                    "type": "any"
+                },
+                {
+                    "description": "Value to lookup",
+                    "name": "lookupValue",
+                    "type": "string"
+                },
+                {
+                    "description": "Additional context",
+                    "name": "additionalContext",
+                    "optional": true,
+                    "type": "string"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "id": "STREAM",
+            "name": "STREAM",
+            "options": {
+                "stream": true
+            },
+            "parameters": [
+                {
+                    "name": "entity",
+                    "type": "string"
+                },
+                {
+                    "name": "propertyName",
+                    "type": "string"
+                },
+                {
+                    "description": "The time in milliseconds to wait before the next increment on the cell.",
+                    "name": "interval",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "* Lookup a value",
+            "id": "LOOKUP",
+            "name": "LOOKUP",
+            "options": {
+                "requiresParameterAddresses": true
+            },
+            "parameters": [
+                {
+                    "description": "resolvedEntity",
+                    "name": "entity",
+                    "type": "string"
+                },
+                {
+                    "description": "property",
+                    "name": "propertyName",
+                    "type": "string"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "* Lookup values",
+            "id": "LOOKUPS",
+            "name": "LOOKUPS",
+            "parameters": [
+                {
+                    "description": "entity to lookup",
+                    "name": "entity",
+                    "type": "string"
+                },
+                {
+                    "description": "the name of the property to retrieve values from",
+                    "name": "propertyName",
+                    "type": "string"
+                }
+            ],
+            "result": {
+                "dimensionality": "matrix",
+                "type": "string"
+            }
+        },
+        {
+            "description": "* Validate",
+            "id": "VALIDATE",
+            "name": "VALIDATE",
+            "parameters": [
+                {
+                    "description": "entity to lookup",
+                    "name": "entity",
+                    "type": "string"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "* Get Time Series",
+            "id": "TIMESERIES",
+            "name": "TIMESERIES",
+            "options": {
+                "requiresParameterAddresses": true
+            },
+            "parameters": [
+                {
+                    "description": "entity to lookup",
+                    "name": "entity",
+                    "type": "string"
+                },
+                {
+                    "description": "the name of the property to retrieve value from",
+                    "name": "propertyName",
+                    "type": "string"
+                }
+            ],
+            "result": {
+                "dimensionality": "matrix",
+                "type": "string"
+            }
+        },
+        {
+            "description": "* Get Time Series With Filter",
+            "id": "TIMESERIESFILTERED",
+            "name": "TIMESERIESFILTERED",
+            "options": {
+                "requiresParameterAddresses": true
+            },
+            "parameters": [
+                {
+                    "description": "entity to lookup",
+                    "name": "entity",
+                    "type": "string"
+                },
+                {
+                    "description": "the name of the property to retrieve value from",
+                    "name": "propertyName",
+                    "type": "string"
+                },
+                {
+                    "description": "the lower range to include results from",
+                    "name": "rangeFrom",
+                    "type": "string"
+                },
+                {
+                    "description": "the upper range to include results from",
+                    "name": "rangeTo",
+                    "type": "string"
+                },
+                {
+                    "description": "fetch the headers for the results",
+                    "name": "fetchHeaders",
+                    "optional": true,
+                    "type": "boolean"
+                }
+            ],
+            "result": {
+                "dimensionality": "matrix",
+                "type": "string"
+            }
+        },
+        {
+            "description": "* Metrics for the current ql session",
+            "id": "METRICS",
+            "name": "METRICS",
+            "parameters": [],
+            "result": {
+                "dimensionality": "matrix",
+                "type": "string"
+            }
+        }
+    ]
+}
