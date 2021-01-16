@@ -42,7 +42,7 @@ export default function* placeSaga() {
 //         //     'Content-Type': 'application/json',
 //         //     'X-Api-Key': 'e74fb723-a022-4f77-a2bd-abfc0207a1b5'
 //         //   });
-//         //   fetch("https://localhost:8806/api/gid/places/Reykjavik", {
+//         //   fetch("https://api20210115154420.azurewebsites.net/api/gid/places/Reykjavik", {
 //         //     headers: myHeaders,
 //         //     method: "GET"
 //         //   })
@@ -60,7 +60,7 @@ export default function* placeSaga() {
 //         //   }
 //         // }
 //         try {
-//             const response = yield fetch('https://localhost:8806/api/gid/places/Reykjavik', {
+//             const response = yield fetch('https://api20210115154420.azurewebsites.net/api/gid/places/Reykjavik', {
 //               method: 'GET',
 
 //               headers: { 'Content-Type': 'application/json' }a
@@ -78,7 +78,7 @@ export default function* placeSaga() {
 //             yield put(actions.loginRequestFailure(error));
 //           }
 //     axios
-// 			.get(`https://localhost:8806/api/gid/places/Reykjavik`)
+// 			.get(`https://api20210115154420.azurewebsites.net/api/gid/places/Reykjavik`)
 // 			.then((res) => res)
 // 			.then((res) => {
 // 				console.log('this is the data' + res);

@@ -15,6 +15,7 @@ Please read the [Project Page](PROJECT.md) carefully!
 - check if the project is running by checking out the [excel panel](http://localhost:3000/excel) in a browser
   - It should show information for Reykjavik city on the page
      
+
 ### Loading the QL plugin in Excel
 - Go to the [web version of Excel](https://quicklookupcom-my.sharepoint.com/) and login to Sharepoint
 - Open a excel document
@@ -27,6 +28,7 @@ Please read the [Project Page](PROJECT.md) carefully!
 
 ### Troubleshooting
 - You may need to clear the cookies/cache in your browser to get the latest version of the plugin to work
+
 
 ## Prerequisites
 - Node
