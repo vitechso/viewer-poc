@@ -40,6 +40,8 @@ The panel was a part of a proof-of-concept project but now we need to start prop
   * [Excel Test Document Setup for Quick Lookup](https://vimeo.com/501161306/656b1654c1)
 * Access to a mockup API server that contains demo data
   * [REST API](https://api20210115154420.azurewebsites.net/api-docs/index.html)
+  * SWAGGER UI
+  * Authorize with "ql" 
 * Access to an Excel document with test examples
   * *Please check your email for a link to an Exel sheet shared with you*
   * A manual setup is explained in the [Test Document in Excel](TEST_DOCUMENT.md)
