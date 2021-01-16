@@ -318,7 +318,7 @@ function _makeRemoteRequest() {
     // Make the remote request.
 
     // let queryString = requestBatch.join("&batchEntries=")
-    let url = "https://api20210115154420.azurewebsites.net/api/batch";
+    let url = process.env.QL_BATCH_API;
 
     // let url = "https://localhost:44301/api/batch" // ?batchEntries=" + queryString;
     //let url = "https://quicklookup.local/api/batch" // ?batchEntries=" + queryString;

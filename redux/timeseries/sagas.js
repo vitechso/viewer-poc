@@ -9,7 +9,7 @@ export function* fetchTimeseriesDataEffect(json) {
     //console.log("payload: " + JSON.stringify(json));
     const id = "place";
     let identifierUrl = json.payload;
-    var url = `https://api20210115154420.azurewebsites.net/api/timeseries?identifier=${identifierUrl}&lookupValue=${json.lookupValue}`;
+    var url = `${process.env.QL_HOST}/api/timeseries?identifier=${identifierUrl}&lookupValue=${json.lookupValue}`;
     
     console.log("calling " + url)
 
