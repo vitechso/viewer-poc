@@ -6,7 +6,7 @@ import axios from 'axios';
 export function* fetchPlaceDataEffect(json) {
   try {
     var payload = json.payload.substring(json.payload.lastIndexOf('/') + 1);
-    var url = `${process.env.QL_HOST}/api/gid/places/${payload}`
+    var url = `https://api20210115154420.azurewebsites.net/api/gid/places/${payload}`
     console.log("calling " + url)
     //console.log("Payload = " + JSON.stringify(json));
     //console.log(url);

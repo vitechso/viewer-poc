@@ -27,7 +27,7 @@ export default async function handler(req, res) {
               })
             })
         })
-        await instance.post(process.env.QL_BATCH_API, req.body)
+        await instance.post('https://api20210115154420.azurewebsites.net/api/batch', req.body)
         .then(response => {
             console.log('calling batch api')
             res.statusCode = 200
