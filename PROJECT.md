@@ -54,7 +54,7 @@ The panel was a part of a proof-of-concept project but now we need to start prop
 * Get everything running
 * Assess the project
 * Report an estimated time for the complete refactoring outlined in Phase 1
-* Look does NOT have to be pixel perfect with Figma version  
+  * Look does NOT have to be pixel perfect with Figma version  
 * **IMPORTANT** - Wait for an approval before continuing to Phase1
 
 ## Phase 1
