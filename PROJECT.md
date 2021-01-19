@@ -68,7 +68,7 @@ The panel was a part of a proof-of-concept project but now we need to start prop
 * Make minor UI improvements 
   * A list of improvements will be made available once phase 1 is successfully completed
   * **IMPORTANT** - This part is estimated and timed separately at a later stage
-  * The 2nd Phase will be done on hourly bases, without requiering an estimate
+* The 2nd Phase will be done on hourly bases, without requiering an estimate
 
 ## You will be rated on:
 * The quality and design of the refactored application
