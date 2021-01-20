@@ -1,9 +1,9 @@
 import Head from 'next/head';
 import React from 'react';
 import Link from 'next/link';
-import IntlMessages from '@iso/components/utility/intlMessages';
+import IntlMessages from '@ql/components/utility/intlMessages';
 import FourZeroFourStyleWrapper from '@ql/styles/404.styles';
-import Image from '@iso/assets/images/rob.png';
+import Image from '@ql/assets/images/rob.png';
 
 function FourZeroFour() {
   return (
