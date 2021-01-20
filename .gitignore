@@ -168,3 +168,6 @@ terraform.rc
 key.pem
 cert.pem
 .next
+
+# Backup files
+*.bkp.*
