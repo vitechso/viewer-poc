@@ -8,7 +8,7 @@ import IntlMessages from '@iso/components/utility/intlMessages';
 import FirebaseLoginForm from '../../FirebaseForm/FirebaseForm';
 import authAction from '@iso/redux/auth/actions';
 import appAction from '@iso/redux/app/actions';
-import Auth0 from '../../Authentication/Auth0/Auth0';
+import Auth0 from '@ql/auth/Auth0';
 import {
   signInWithGoogle,
   signInWithFacebook,

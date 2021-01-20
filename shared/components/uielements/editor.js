@@ -4,7 +4,7 @@ import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
 import 'react-quill/dist/quill.bubble.css';
 import 'react-quill/dist/quill.core.css';
-import EditorWrapper from './styles/editor.style';
+import EditorWrapper from '@ql/styles/editor.style';
 class Editor extends React.Component {
   constructor(props) {
     super(props);

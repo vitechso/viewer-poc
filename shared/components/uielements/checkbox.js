@@ -1,5 +1,5 @@
 import { Checkbox } from 'antd';
-import AntCheckbox from './styles/checkbox.style';
+import AntCheckbox from '@ql/styles/checkbox.style';
 
 const checkbox = AntCheckbox(Checkbox);
 const CheckboxGroup = Checkbox.Group;

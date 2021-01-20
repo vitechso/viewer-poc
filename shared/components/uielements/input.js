@@ -4,7 +4,7 @@ import {
   InputGroupWrapper,
   InputSearchWrapper,
   TextAreaWrapper,
-} from './styles/input.style';
+} from '@ql/styles/input.style';
 import WithDirection from '@iso/lib/helpers/rtl';
 const { Search, TextArea, Group } = Input;
 

@@ -17,18 +17,27 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-      "baseUrl": ".",
-      "paths": {
-          "@iso/*": ["./shared/*"],
-          "@react/": ["./node_modules/@react/"],
-          "@react/*": ["./node_modules/@react/*"],
-      }
+    "baseUrl": ".",
+    "paths": {
+      "@iso/*": [
+        "./shared/*"
+      ],
+      "@ql/*": [
+        "./app/*"
+      ],
+      "@react/": [
+        "./node_modules/@react/"
+      ],
+      "@react/*": [
+        "./node_modules/@react/*"
+      ],
+    }
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"  
-],
+    "**/*.tsx"
+  ],
   "exclude": [
     "node_modules"
   ]

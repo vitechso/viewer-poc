@@ -17,7 +17,7 @@ import GlideCarousel, { GlideSlide } from '@iso/ui/GlideCarousel/GlideCarousel';
 import Modal from '@iso/ui/Antd/Modal/Modal';
 import PostCard from '@iso/components/PostCard';
 import AvatarCard from '@iso/components/AvatarCard/AvatarCard';
-import Comments from './comments';
+import Comments from './Comments';
 import PostsWrapper, { Button, ContentWrapper } from './Posts.styles';
 
 const galleryOptions = {
@@ -140,27 +140,27 @@ const Posts = ({ data, avatar, username }) => {
               <div className="comments">
                 {newData.comments !== undefined && newData.comments.length > 0
                   ? newData.comments.map(item => (
-                      <Comments
-                        key={`comment-key${item.id}`}
-                        role={item.role}
-                        avatar={item.avatar}
-                        name={item.username}
-                        content={item.comment}
-                        time={item.time}
-                        handleLike={() =>
-                          console.log(
-                            'Write like function for post.',
-                            newData.id
-                          )
-                        }
-                        handleReply={() =>
-                          console.log(
-                            'Write reply function for post.',
-                            newData.id
-                          )
-                        }
-                      />
-                    ))
+                    <Comments
+                      key={`comment-key${item.id}`}
+                      role={item.role}
+                      avatar={item.avatar}
+                      name={item.username}
+                      content={item.comment}
+                      time={item.time}
+                      handleLike={() =>
+                        console.log(
+                          'Write like function for post.',
+                          newData.id
+                        )
+                      }
+                      handleReply={() =>
+                        console.log(
+                          'Write reply function for post.',
+                          newData.id
+                        )
+                      }
+                    />
+                  ))
                   : ''}
               </div>
             </div>

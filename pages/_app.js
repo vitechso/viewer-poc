@@ -8,19 +8,18 @@ import 'antd/dist/antd.css';
 import '@glidejs/glide/dist/css/glide.core.min.css';
 import 'react-quill/dist/quill.snow.css';
 import 'react-quill/dist/quill.core.css';
-import '../style/global.css';
-import Head from 'next/head';
+import '@ql/styles/global.css';
 
 class CustomApp extends App {
   render() {
     const { Component, pageProps, store } = this.props;
     return (
       <>
-      <Provider store={store}>
-        <ThemeProvider>
-          <Component {...pageProps} />
-        </ThemeProvider>
-      </Provider>
+        <Provider store={store}>
+          <ThemeProvider>
+            <Component {...pageProps} />
+          </ThemeProvider>
+        </Provider>
       </>
     );
   }

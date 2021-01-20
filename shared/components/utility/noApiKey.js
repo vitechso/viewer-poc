@@ -1,6 +1,5 @@
 import React from 'react';
 import HelperText from './NoApiKey.style';
-// import NoApiKeyImg from "../../image/NoAPIKey.svg";
 
 export default ({ width = '100%', height = '40vh', NoApiKeyImg }) => (
   <HelperText className="isoHelperText" style={{ width, height }}>

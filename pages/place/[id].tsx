@@ -2,7 +2,6 @@ import React, { useState, useEffect, useCallback } from "react";
 import dynamic from "next/dynamic";
 import Head from "next/head";
 import { useRouter } from "next/router";
-import { withAuthSync } from "../../authentication/auth.utils";
 import { Row, Col } from "antd";
 import basicStyle from "@iso/assets/styles/constants";
 import LayoutWrapper from "../../shared/components/utility/layoutWrapper";
@@ -25,7 +24,6 @@ import MainListTile from "../../Components/QL/MainListTile";
 import Weather from "../../Components/QL/Weather";
 import Demographics from "../../Components/QL/Demographics";
 import Population from "../../Components/QL/Population";
-//import TestComponent from "../../Components/Testing/TestComponent"
 
 const ShowJsonFromQLApi = dynamic(() => import("../../Components/Common/Code"), { ssr: false });
 
@@ -34,7 +32,6 @@ const place = () => {
   const { id } = router.query;
 
   const data = useSelector(state => state.place.data);
-  const loading = useSelector(state => state.place.loading);
 
   const dispatch = useDispatch();
 
@@ -60,12 +57,6 @@ const place = () => {
       </Head>
       <DashboardLayout>
         <LayoutWrapper>
-          {/* Just for debugging*/}
-          {/* <Row style={rowStyle} gutter={gutter} justify="start">
-          <Col md={24} xs={24} style={colStyle}>
-            <TestComponent />
-          </Col>
-        </Row> */}
           {data && (
             <>
               <Row style={rowStyle} justify="start">

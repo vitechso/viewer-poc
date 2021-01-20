@@ -1,5 +1,5 @@
 import { all } from 'redux-saga/effects';
-import authSagas from '../authentication/sagas';
+import authSagas from '@ql/auth/sagas';
 import contactSagas from '@iso/redux/contacts/saga';
 import invoicesSagas from '@iso/redux/invoice/saga';
 import mailSagas from '@iso/redux/mail/saga';

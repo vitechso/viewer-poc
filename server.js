@@ -1,4 +1,3 @@
-// server.js
 var https = require('https');
 const { parse } = require('url')
 const next = require('next')
@@ -12,20 +11,16 @@ var fs = require('fs');
 const port = 8800
 
 var options = {
-    key: fs.readFileSync('./certs/key.pem'),
-    cert: fs.readFileSync('./certs/cert.pem')
+  key: fs.readFileSync('./certs/key.pem'),
+  cert: fs.readFileSync('./certs/cert.pem')
 };
 
 app.prepare().then(() => {
-    https.createServer(options, (req, res) => {
-        
-        //res.setHeader('Access-Control-Allow-Origin', '*');
-
-        // handle ....
-        const parsedUrl = parse(req.url, true)
-        handle(req, res, parsedUrl)
-    }).listen(port, err => {
-        if (err) throw err
-        console.log(`> Ready on https://localhost:${port}`)
-    })
+  https.createServer(options, (req, res) => {
+    const parsedUrl = parse(req.url, true)
+    handle(req, res, parsedUrl)
+  }).listen(port, err => {
+    if (err) throw err
+    console.log(`> Ready on https://localhost:${port}`)
+  })
 })

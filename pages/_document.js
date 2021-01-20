@@ -1,5 +1,4 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
-import { useRouter } from 'next/router'
 import { ServerStyleSheet } from 'styled-components';
 
 export default class CustomDocument extends Document {
@@ -29,7 +28,6 @@ export default class CustomDocument extends Document {
     }
   }
   render() {
-    const page = this.props.__NEXT_DATA__.page;
     return (
       <Html>
         <Head>
@@ -39,7 +37,7 @@ export default class CustomDocument extends Document {
             type="image/png"
             sizes="16x16"
           />
-          <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900" rel="stylesheet"/>
+          <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900" rel="stylesheet" />
           <link
             href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700"
             rel="stylesheet"
@@ -56,15 +54,11 @@ export default class CustomDocument extends Document {
             crossOrigin=""
             async
           />
-                
-       </Head>
+
+        </Head>
         <body>
           <Main />
-          <NextScript />          
-          {/* {page.includes('/excel') && <script id="office-js" type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>} */}
-          {/* {page.includes('/excel') && <script id="functions-js" type="text/javascript" src="/scripts/functions.js"></script>} */}
-          
-          {/* {page.includes('/excel') && <script src="https://appsforoffice.microsoft.com/lib/1.1/hosted/custom-functions-runtime.js" type="text/javascript"></script> } */}
+          <NextScript />
         </body>
       </Html>
     );

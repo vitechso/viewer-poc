@@ -1,5 +1,5 @@
 import { AutoComplete } from 'antd';
-import { AntAutoComplete } from './styles/autoComplete.style';
+import { AntAutoComplete } from '@ql/styles/autoComplete.style';
 import WithDirection from '@iso/lib/helpers/rtl';
 const WDAutoCompletes = AntAutoComplete(AutoComplete);
 const AutoCompletes = WithDirection(WDAutoCompletes);

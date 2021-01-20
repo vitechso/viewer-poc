@@ -2,7 +2,7 @@ import Head from 'next/head';
 import React from 'react';
 import Link from 'next/link';
 import IntlMessages from '@iso/components/utility/intlMessages';
-import FiveZeroZeroStyleWrapper from '../styled/500.styles';
+import FiveZeroZeroStyleWrapper from '@ql/styles/500.styles';
 import Image from '@iso/assets/images/rob.png';
 
 function FiveHundred() {

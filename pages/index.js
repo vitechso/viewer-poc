@@ -8,10 +8,12 @@ import Button from '@iso/components/uielements/button';
 import IntlMessages from '@iso/components/utility/intlMessages';
 import jwtConfig from '@iso/config/jwt.config';
 import FirebaseLogin from '@iso/containers/FirebaseForm/FirebaseForm';
-import Auth0 from '../authentication/Auth0';
-import authActions from '../authentication/actions';
-import SignInStyleWrapper from '../styled/SignIn.styles';
+import Auth0 from '@ql/auth/Auth0';
+import authActions from '@ql/auth/actions';
+import SignInStyleWrapper from '@ql/styles/SignIn.styles';
+
 const { login } = authActions;
+
 export default function SignInPage(props) {
   const dispatch = useDispatch();
   const router = useRouter();
@@ -30,7 +32,6 @@ export default function SignInPage(props) {
         (process.browser && document.getElementById('inpuPassword').value) ||
         '',
     };
-    // jwtLogin(history, userInfo);
   };
 
   return (
