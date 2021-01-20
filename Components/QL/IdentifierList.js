@@ -4,7 +4,7 @@ import { Tabs } from 'antd';
 const { TabPane } = Tabs;
 import { Typography } from 'antd';
 const { Title } = Typography;
-import { checkNull } from '../../lib/helpers/utils'
+import { checkNull } from '@ql/lib/helpers/utils'
 import { CaretLeftOutlined, CaretRightOutlined } from '@ant-design/icons';
 import GenericDataComponent from './GenericDataComponent';
 
@@ -27,23 +27,23 @@ const IdentifierList = () => {
 
 	const dataProperties = () => [
 		{
-            name: data.identifierList[0].name,
-            key: 'identifierList[0].value',
+			name: data.identifierList[0].name,
+			key: 'identifierList[0].value',
 			value: checkNull(data.identifierList[0].value)
 		},
 		{
-            name: data.identifierList[1].name,
-            key: 'identifierList[1].value',
+			name: data.identifierList[1].name,
+			key: 'identifierList[1].value',
 			value: checkNull(data.identifierList[1].value)
 		},
 		{
-            name: data.identifierList[2].name,
-            key: 'identifierList[2].value',
+			name: data.identifierList[2].name,
+			key: 'identifierList[2].value',
 			value: checkNull(data.identifierList[2].value)
 		},
 		{
-            name: data.identifierList[3].name,
-            key: 'identifierList[3].value',
+			name: data.identifierList[3].name,
+			key: 'identifierList[3].value',
 			value: checkNull(data.identifierList[3].value)
 		}
 	]

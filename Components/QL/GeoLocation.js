@@ -4,7 +4,7 @@ import { Tabs } from 'antd';
 const { TabPane } = Tabs;
 import { Typography } from 'antd';
 const { Title } = Typography;
-import { checkNull } from '../../lib/helpers/utils'
+import { checkNull } from '@ql/lib/helpers/utils'
 import { CaretLeftOutlined, CaretRightOutlined } from '@ant-design/icons';
 import GenericDataComponent from './GenericDataComponent';
 import GeoLocationInstance from './GeoLocationInstance';
@@ -38,7 +38,7 @@ const GeoLocation = () => {
             }
             , {
                 name: 'PostalCode',
-                key: 'geo.address.postalCode', 
+                key: 'geo.address.postalCode',
                 value: checkNull(data?.geo?.address?.postalCode)
             },
             {

@@ -3,8 +3,8 @@ import { useSelector } from 'react-redux';
 import { Card } from 'antd';
 import { Typography } from 'antd';
 const { Title, Paragraph, Text } = Typography;
-import { percentage, isServer } from '../../../../lib/helpers/utils';
-import useWindowSize from '../../../../lib/helpers/useWindowSize';
+import { percentage, isServer } from '@ql/lib/helpers/utils';
+import useWindowSize from '@ql/lib/helpers/useWindowSize';
 
 export default function SymmetricBarChartComponent() {
     if (isServer) {

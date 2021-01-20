@@ -1,7 +1,7 @@
 import axios from 'axios'
 import https from 'https'
 import Cors from 'cors'
-import initMiddleware from '../../lib/init-middleware'
+import initMiddleware from '@ql/lib/init-middleware'
 
 //Initialize the cors middleware
 const cors = initMiddleware(

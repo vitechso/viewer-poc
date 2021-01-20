@@ -4,7 +4,7 @@ import basicStyle from '@iso/assets/styles/constants';
 import { Table } from 'antd';
 import { Card } from 'antd';
 import { Row, Col } from 'antd';
-import { checkNull } from '../../lib/helpers/utils'
+import { checkNull } from '@ql/lib/helpers/utils'
 import Link from 'next/link'
 import { Typography, Divider } from 'antd';
 const { Title, Paragraph, Text } = Typography;

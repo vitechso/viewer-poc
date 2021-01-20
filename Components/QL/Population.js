@@ -4,7 +4,7 @@ import { Tabs } from 'antd';
 const { TabPane } = Tabs;
 import { Typography } from 'antd';
 const { Title } = Typography;
-import { checkNull } from '../../lib/helpers/utils'
+import { checkNull } from '@ql/lib/helpers/utils'
 import { CaretLeftOutlined, CaretRightOutlined } from '@ant-design/icons';
 import GenericDataComponent from './GenericDataComponent';
 import PopulationInstance from './PopulationInstance';
@@ -54,10 +54,10 @@ const Population = () => {
         ;
 
     return (
-            <TabbedCards title="Population 1900-2020">
-                        <PopulationInstance />
-                        <GenericDataComponent data={data} dataProperties={dataProperties} />
-            </TabbedCards>
+        <TabbedCards title="Population 1900-2020">
+            <PopulationInstance />
+            <GenericDataComponent data={data} dataProperties={dataProperties} />
+        </TabbedCards>
     );
 }
 

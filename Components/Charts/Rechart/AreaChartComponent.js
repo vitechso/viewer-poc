@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { percentage, isServer } from '../../../lib/helpers/utils';
+import { percentage, isServer } from '@ql/lib/helpers/utils';
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import { Card } from 'antd';
 import { Typography, Divider } from 'antd';

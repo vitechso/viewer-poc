@@ -1,8 +1,8 @@
 import React, { useRef } from 'react';
 import dynamic from "next/dynamic";
 import { useSelector } from 'react-redux';
-import { percentage, isServer } from '../../../../lib/helpers/utils';
-import useWindowSize from '../../../../lib/helpers/useWindowSize';
+import { percentage, isServer } from '@ql/lib/helpers/utils';
+import useWindowSize from '@ql/lib/helpers/useWindowSize';
 import { Typography, Divider } from 'antd';
 const { Title, Paragraph, Text, Link } = Typography;
 
@@ -15,7 +15,7 @@ export default function LineChartComponent() {
     if (isServer) {
         console.error("You should load this component with dynamic so we can get useWindowSize() to work" + isServer);
     }
-    
+
     //TODO: Create/get data from API
     const dataX = useSelector((state) => state.place.data);
 

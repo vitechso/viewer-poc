@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import basicStyle from '@iso/assets/styles/constants';
 import { Card, Table, Button } from 'antd';
-import { CheckIfUrl } from '../../lib/helpers/utils'
+import { CheckIfUrl } from '@ql/lib/helpers/utils'
 import grabIcon from '@iso/assets/images/grabicon/Grab-line-Blue-inverted.png';
 import { lookupByIdentifier, timeseriesByIdentifier } from '../../Components/excel/commands'
 
@@ -15,7 +15,7 @@ const GenericDataComponent = ({ data, dataProperties, nestedArrays }) => {
             title: 'Metric',
             dataIndex: 'name',
             key: 'name',
-            width:'30%',
+            width: '30%',
             render: dt => {
                 return <div className="ql-table-cell-metric">{dt}</div>
             }
@@ -24,7 +24,7 @@ const GenericDataComponent = ({ data, dataProperties, nestedArrays }) => {
             title: 'Value',
             dataIndex: 'value',
             key: 'value',
-            width:'55%',
+            width: '55%',
             render: dt => {
                 return <div className="ql-table-cell-value">{CheckIfUrl(dt)}</div>;
             }
@@ -32,13 +32,13 @@ const GenericDataComponent = ({ data, dataProperties, nestedArrays }) => {
         {
             align: 'right',
             title: '',
-            width:'15%',
+            width: '15%',
             dataIndex: "excelAction",
             key: "excelAction",
             render: (excelAction) => {
-                return <span className="action"><Button type="link" onClick={() => lookup(excelAction[0], excelAction[1])}><img src={grabIcon} /></Button> { timeSeriesFields.includes(excelAction[1]) && <Button type="link" onClick={() => timeseries(excelAction[0], excelAction[1])}><img src="/assets/icons/timeseries.svg" /></Button> } </span>
+                return <span className="action"><Button type="link" onClick={() => lookup(excelAction[0], excelAction[1])}><img src={grabIcon} /></Button> {timeSeriesFields.includes(excelAction[1]) && <Button type="link" onClick={() => timeseries(excelAction[0], excelAction[1])}><img src="/assets/icons/timeseries.svg" /></Button>} </span>
             }
-        }        
+        }
     ];
 
     function lookup(identifier, propertyName) {

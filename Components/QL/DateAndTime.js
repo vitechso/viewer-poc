@@ -5,7 +5,7 @@ const { TabPane } = Tabs;
 import { Typography } from 'antd';
 const { Title } = Typography;
 import { CaretLeftOutlined, CaretRightOutlined } from '@ant-design/icons';
-import { checkNull } from '../../lib/helpers/utils'
+import { checkNull } from '@ql/lib/helpers/utils'
 import DateAndTimeInstance from './DateAndTimeInstance';
 import GenericDataComponent from './GenericDataComponent';
 import TabbedCards from './TabbedCards'
@@ -118,10 +118,10 @@ const DateAndTime = () => {
         ];
 
     return (
-            <TabbedCards title="Today">
-                        <DateAndTimeInstance />
-                        <GenericDataComponent data={data} dataProperties={dataProperties} />
-            </TabbedCards>
+        <TabbedCards title="Today">
+            <DateAndTimeInstance />
+            <GenericDataComponent data={data} dataProperties={dataProperties} />
+        </TabbedCards>
     );
 }
 

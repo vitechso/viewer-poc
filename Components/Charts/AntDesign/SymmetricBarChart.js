@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import dynamic from "next/dynamic";
-import { percentage, isServer } from '../../../lib/helpers/utils';
-import useWindowSize from '../../../lib/helpers/useWindowSize';
+import { percentage, isServer } from '@ql/lib/helpers/utils';
+import useWindowSize from '@ql/lib/helpers/useWindowSize';
 
 const BidirectionalBar = dynamic(
   () => import("@ant-design/charts").then((mod) => mod.BidirectionalBar),
