@@ -39,3 +39,13 @@
 # Version : 2.9.7
 
 1. Need to check auth
+
+# Version : 3.1.1 Changes to refactoring the app
+
+# All components serving has been centeralized using @ql which points to App folder
+
+# All Redux Sagas and actions has been centeralized using @ql which points to App folder
+
+# All Containers, Config, Styles and helpers has been centeralized using @ql which points to App folder
+
+# Removed unused routes and related components like dashboard etc.
