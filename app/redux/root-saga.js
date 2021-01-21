@@ -1,5 +1,5 @@
 import { all } from 'redux-saga/effects';
-import authSagas from '@ql/redux/auth/saga';
+import authSagas from '@ql/auth/sagas';
 import contactSagas from '@ql/redux/contacts/saga';
 import invoicesSagas from '@ql/redux/invoice/saga';
 import mailSagas from '@ql/redux/mail/saga';
@@ -14,6 +14,7 @@ import articles from '@ql/redux/articles/sagas';
 import investors from '@ql/redux/investors/sagas';
 import scrumBoardSaga from '@ql/redux/scrumBoard/saga';
 import quizSaga from '@ql/redux/quiz/saga';
+
 import profileSaga from '@ql/redux/profile/saga';
 import placeSaga from '@ql/redux/place/sagas';
 import timeseriesSaga from '@ql/redux/timeseries/sagas';

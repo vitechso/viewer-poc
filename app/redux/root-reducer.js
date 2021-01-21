@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux';
-import Auth from '@ql/redux/auth/reducer';
+import Auth from '@ql/auth/reducer';
 import App from '@ql/redux/app/reducer';
 import Mails from '@ql/redux/mail/reducer';
 import Calendar from '@ql/redux/calendar/reducer';
