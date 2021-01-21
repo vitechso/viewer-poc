@@ -22,7 +22,8 @@ const nextConfig = {
   },
   env: {
     BACKEND_URL: 'https://localhost:3000',
-  }
+  },
+  compress: true
 };
 
 module.exports = withPlugins(
