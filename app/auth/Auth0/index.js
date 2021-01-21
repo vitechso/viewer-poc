@@ -1,5 +1,5 @@
 import Auth0Lock from 'auth0-lock';
-import Auth0Config from '@iso/config/auth0.config';
+import Auth0Config from '@ql/config/auth0.config';
 import { setCookie, getCookie, removeCookie } from '../auth.utils';
 
 class Auth0Helper {
@@ -11,10 +11,10 @@ class Auth0Helper {
   login(handleLogin) {
     this.lock = this.isValid
       ? new Auth0Lock(
-          Auth0Config.clientID,
-          Auth0Config.domain,
-          Auth0Config.options
-        )
+        Auth0Config.clientID,
+        Auth0Config.domain,
+        Auth0Config.options
+      )
       : null;
 
     this.lock.on('authenticated', authResult => {

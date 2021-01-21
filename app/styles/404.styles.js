@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { palette } from 'styled-theme';
-import { transition, borderRadius } from '@iso/lib/helpers/style_utils';
-import WithDirection from '@iso/lib/helpers/rtl';
+import { transition, borderRadius } from '@ql/lib/helpers/style_utils';
+import WithDirection from '@ql/lib/helpers/rtl';
 
 const FourZeroFourStyleWrapper = styled.div`
   width: 100%;
@@ -120,9 +120,9 @@ const FourZeroFourStyleWrapper = styled.div`
     align-items: center;
     justify-content: center;
     margin-left: ${props =>
-      props['data-rtl'] === 'rtl' ? 'inherit' : '100px'};
+    props['data-rtl'] === 'rtl' ? 'inherit' : '100px'};
     margin-right: ${props =>
-      props['data-rtl'] === 'rtl' ? '100px' : 'inherti'};
+    props['data-rtl'] === 'rtl' ? '100px' : 'inherti'};
     height: 500px;
 
     @media only screen and (max-width: 767px) {

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Layout } from 'antd';
-import appActions from '@iso/redux/app/actions';
+import appActions from '@ql/redux/app/actions';
 import TopbarNotification from './TopbarNotification';
 import TopbarMessage from './TopbarMessage';
 import TopbarSearch from './TopbarSearch';

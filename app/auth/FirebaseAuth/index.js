@@ -1,7 +1,7 @@
 import firebase from 'firebase/app';
 import ReduxSagaFirebase from 'redux-saga-firebase';
 import 'firebase/firestore';
-import firebaseConfig from '@iso/config/firebase.config';
+import firebaseConfig from '@ql/config/firebase.config';
 
 const valid =
   firebaseConfig && firebaseConfig.apiKey && firebaseConfig.projectId;
@@ -11,7 +11,7 @@ let firebaseAuth = {};
 try {
   firebaseApp = firebase.initializeApp(firebaseConfig);
   firebaseAuth = firebase.auth;
-} catch (e) {}
+} catch (e) { }
 
 class FirebaseHelper {
   isValid = valid;

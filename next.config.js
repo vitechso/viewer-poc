@@ -1,12 +1,12 @@
 const withPlugins = require('next-compose-plugins');
 const withTM = require('next-transpile-modules')([
-  '@iso/components',
-  '@iso/assets',
-  '@iso/config',
-  '@iso/lib',
-  '@iso/ui',
-  '@iso/redux',
-  '@iso/containers',
+  '@ql/components',
+  '@ql/assets',
+  '@ql/config',
+  '@ql/lib',
+  '@ql/ui',
+  '@ql/redux',
+  '@ql/containers',
 ]);
 const withOptimizedImages = require('next-optimized-images');
 const withFonts = require('next-fonts');

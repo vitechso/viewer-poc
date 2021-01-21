@@ -4,8 +4,8 @@ import {
   transition,
   borderRadius,
   boxShadow,
-} from '@iso/lib/helpers/style_utils';
-import WithDirection from '@iso/lib/helpers/rtl';
+} from '@ql/lib/helpers/style_utils';
+import WithDirection from '@ql/lib/helpers/rtl';
 
 const TopbarWrapper = styled.div`
   .isomorphicTopbar {
@@ -14,25 +14,25 @@ const TopbarWrapper = styled.div`
     background-color: #ffffff;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     padding: ${(props) =>
-      props['data-rtl'] === 'rtl' ? '0 265px 0 31px' : '0 31px 0 265px'};
+    props['data-rtl'] === 'rtl' ? '0 265px 0 31px' : '0 31px 0 265px'};
     z-index: 1000;
     ${transition()};
 
     @media only screen and (max-width: 767px) {
       padding: ${(props) =>
-        props['data-rtl'] === 'rtl'
-          ? '0px 260px 0px 15px !important'
-          : '0px 15px 0px 260px !important'};
+    props['data-rtl'] === 'rtl'
+      ? '0px 260px 0px 15px !important'
+      : '0px 15px 0px 260px !important'};
     }
 
     &.collapsed {
       padding: ${(props) =>
-        props['data-rtl'] === 'rtl' ? '0 109px 0 31px' : '0 31px 0 109px'};
+    props['data-rtl'] === 'rtl' ? '0 109px 0 31px' : '0 31px 0 109px'};
       @media only screen and (max-width: 767px) {
         padding: ${(props) =>
-          props['data-rtl'] === 'rtl'
-            ? '0px 15px !important'
-            : '0px 15px !important'};
+    props['data-rtl'] === 'rtl'
+      ? '0px 15px !important'
+      : '0px 15px !important'};
       }
     }
 
@@ -42,7 +42,7 @@ const TopbarWrapper = styled.div`
 
       @media only screen and (max-width: 767px) {
         margin: ${(props) =>
-          props['data-rtl'] === 'rtl' ? '0 0 0 20px' : '0 20px 0 0'};
+    props['data-rtl'] === 'rtl' ? '0 0 0 20px' : '0 20px 0 0'};
       }
 
       .triggerBtn {
@@ -71,7 +71,7 @@ const TopbarWrapper = styled.div`
       li {
         margin-left: ${(props) => (props['data-rtl'] === 'rtl' ? '30px' : '0')};
         margin-right: ${(props) =>
-          props['data-rtl'] === 'rtl' ? '0' : '30px'};
+    props['data-rtl'] === 'rtl' ? '0' : '30px'};
         cursor: pointer;
         line-height: normal;
         position: relative;
@@ -79,9 +79,9 @@ const TopbarWrapper = styled.div`
 
         @media only screen and (max-width: 360px) {
           margin-left: ${(props) =>
-            props['data-rtl'] === 'rtl' ? '25px' : '0'};
+    props['data-rtl'] === 'rtl' ? '25px' : '0'};
           margin-right: ${(props) =>
-            props['data-rtl'] === 'rtl' ? '0' : '25px'};
+    props['data-rtl'] === 'rtl' ? '0' : '25px'};
         }
 
         &:last-child {
@@ -112,9 +112,9 @@ const TopbarWrapper = styled.div`
             position: absolute;
             top: -8px;
             left: ${(props) =>
-              props['data-rtl'] === 'rtl' ? 'inherit' : '10px'};
+    props['data-rtl'] === 'rtl' ? 'inherit' : '10px'};
             right: ${(props) =>
-              props['data-rtl'] === 'rtl' ? '10px' : 'inherit'};
+    props['data-rtl'] === 'rtl' ? '10px' : 'inherit'};
             ${borderRadius('50%')};
           }
         }

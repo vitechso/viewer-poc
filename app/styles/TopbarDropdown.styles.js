@@ -4,8 +4,8 @@ import {
   transition,
   borderRadius,
   boxShadow,
-} from '@iso/lib/helpers/style_utils';
-import WithDirection from '@iso/lib/helpers/rtl';
+} from '@ql/lib/helpers/style_utils';
+import WithDirection from '@ql/lib/helpers/rtl';
 
 const TopbarDropdownWrapper = styled.div`
   display: flex;
@@ -64,7 +64,7 @@ const TopbarDropdownWrapper = styled.div`
       flex-direction: column;
       text-decoration: none;
       text-align: ${(props) =>
-        props['data-rtl'] === 'rtl' ? 'right' : 'left'};
+    props['data-rtl'] === 'rtl' ? 'right' : 'left'};
       width: 100%;
       border-bottom: 1px solid ${palette('border', 2)};
       ${transition()};
@@ -165,7 +165,7 @@ const TopbarDropdownWrapper = styled.div`
         height: 35px;
         overflow: hidden;
         margin: ${(props) =>
-          props['data-rtl'] === 'rtl' ? '0 0 0 15px' : '0 15px 0 0'};
+    props['data-rtl'] === 'rtl' ? '0 0 0 15px' : '0 15px 0 0'};
         display: -webkit-inline-flex;
         display: -ms-inline-flex;
         display: inline-flex;
@@ -197,7 +197,7 @@ const TopbarDropdownWrapper = styled.div`
         h5 {
           margin-bottom: 0;
           padding: ${(props) =>
-            props['data-rtl'] === 'rtl' ? '0 0 0 15px' : '0 15px 0 0'};
+    props['data-rtl'] === 'rtl' ? '0 0 0 15px' : '0 15px 0 0'};
         }
 
         .isoDate {

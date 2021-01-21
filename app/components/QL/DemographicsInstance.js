@@ -5,10 +5,10 @@ import basicStyle from '@ql/styles/constants';
 import { Card } from 'antd';
 import { Row, Col } from 'antd';
 import { Typography, Divider, Space } from 'antd';
-import newbornImage from '@iso/assets/images/demographics/baby.png';
-import growthImage from '@iso/assets/images/demographics/Growth-icon.png';
-import genderImage from '@iso/assets/images/demographics/gender.png';
-import ageImage from '@iso/assets/images/demographics/age.png';
+import newbornImage from '@ql/assets/images/demographics/baby.png';
+import growthImage from '@ql/assets/images/demographics/Growth-icon.png';
+import genderImage from '@ql/assets/images/demographics/gender.png';
+import ageImage from '@ql/assets/images/demographics/age.png';
 import SymmetricBarChart from '@ql/components/Charts/AntDesign/SymmetricBarChart'
 import HorizontalStackedBarChart from '@ql/components/Charts/G2/HorizontalStackedBarChart'
 

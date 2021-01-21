@@ -1,4 +1,4 @@
-import { themeConfig } from '@iso/config/theme/theme.config';
+import { themeConfig } from '@ql/config/theme/theme.config';
 const changeThemes = {
   id: 'changeThemes',
   label: 'themeSwitcher',

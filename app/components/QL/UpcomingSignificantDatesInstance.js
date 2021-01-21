@@ -9,17 +9,17 @@ import { Typography, Divider } from 'antd';
 const { Title, Paragraph, Text } = Typography;
 
 //TODO: Is this the best way to do this? See comment in GetIcon().
-import christianIcon from '@iso/assets/images/SpecialDays/Christian.png';
-import nationalHollidayIcon from '@iso/assets/images/SpecialDays/NationalHolliday.png';
-import observanceIcon from '@iso/assets/images/SpecialDays/observance.png';
-import hinduIcon from '@iso/assets/images/SpecialDays/Hindu.png';
-import muslimIcon from '@iso/assets/images/SpecialDays/Muslim.png';
-import silentDayIcon from '@iso/assets/images/SpecialDays/SilentDay.png';
-import weekdayIcon from '@iso/assets/images/SpecialDays/Weekday.png';
+import christianIcon from '@ql/assets/images/SpecialDays/Christian.png';
+import nationalHollidayIcon from '@ql/assets/images/SpecialDays/NationalHolliday.png';
+import observanceIcon from '@ql/assets/images/SpecialDays/observance.png';
+import hinduIcon from '@ql/assets/images/SpecialDays/Hindu.png';
+import muslimIcon from '@ql/assets/images/SpecialDays/Muslim.png';
+import silentDayIcon from '@ql/assets/images/SpecialDays/SilentDay.png';
+import weekdayIcon from '@ql/assets/images/SpecialDays/Weekday.png';
 // permutation icons
-import religiousNationalHolliday from '@iso/assets/images/SpecialDays/permutations/religiousNationalHolliday.png';
-import religiousObservance from '@iso/assets/images/SpecialDays/permutations/religiousObservance.png';
-import religiousSilentDay from '@iso/assets/images/SpecialDays/permutations/religiousSilentDay.png';
+import religiousNationalHolliday from '@ql/assets/images/SpecialDays/permutations/religiousNationalHolliday.png';
+import religiousObservance from '@ql/assets/images/SpecialDays/permutations/religiousObservance.png';
+import religiousSilentDay from '@ql/assets/images/SpecialDays/permutations/religiousSilentDay.png';
 
 import { lookupByIdentifier, timeseriesByIdentifier } from '@ql/components/excel/commands'
 

@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import Link from 'next/link';
 import { connect } from 'react-redux';
-import Popover from '@iso/components/uielements/popover';
-import SingleCart from '@iso/components/Cart/SingleCartModal';
-import ecommerceAction from '@iso/redux/ecommerce/actions';
-import TopbarDropdownWrapper from './TopbarDropdown.styles';
-import { TopbarCartIcon } from '@iso/config/icon.config';
+import Popover from '@ql/components/uielements/popover';
+import SingleCart from '@ql/components/Cart/SingleCartModal';
+import ecommerceAction from '@ql/redux/ecommerce/actions';
+import TopbarDropdownWrapper from '@ql/styles/TopbarDropdown.styles';
+import { TopbarCartIcon } from '@ql/config/icon.config';
 
 const { changeViewTopbarCart, changeProductQuantity } = ecommerceAction;
 let totalPrice;
@@ -112,8 +112,8 @@ class TopbarAddtoCart extends Component {
           {productQuantity.length === 0 ? (
             <span>0</span>
           ) : (
-            <span>{productQuantity.length}</span>
-          )}
+              <span>{productQuantity.length}</span>
+            )}
         </div>
       </Popover>
     );

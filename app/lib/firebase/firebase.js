@@ -2,7 +2,7 @@ import firebase from 'firebase/app';
 import 'firebase/firestore';
 import 'firebase/auth';
 import ReduxSagaFirebase from 'redux-saga-firebase';
-import isoConfig from '@iso/config/firebase.config';
+import isoConfig from '@ql/config/firebase.config';
 // Example if anyone want to use different config for production and development using .env
 
 // const prodConfig = {

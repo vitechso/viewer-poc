@@ -4,8 +4,8 @@ import {
   transition,
   borderRadius,
   boxShadow,
-} from '@iso/lib/helpers/style_utils';
-import WithDirection from '@iso/lib/helpers/rtl';
+} from '@ql/lib/helpers/style_utils';
+import WithDirection from '@ql/lib/helpers/rtl';
 
 const ProductsTable = styled.div`
   width: 100%;
@@ -102,7 +102,7 @@ const ProductsTable = styled.div`
           &.isoItemName {
             max-width: none;
             text-align: ${props =>
-              props['data-rtl'] === 'rtl' ? 'right' : 'left'};
+    props['data-rtl'] === 'rtl' ? 'right' : 'left'};
             width: 45%;
 
             @media only screen and (max-width: 991px) {
@@ -218,7 +218,7 @@ const ProductsTable = styled.div`
 
           &.isoItemName {
             text-align: ${props =>
-              props['data-rtl'] === 'rtl' ? 'right' : 'left'};
+    props['data-rtl'] === 'rtl' ? 'right' : 'left'};
             max-width: none;
             width: 45%;
 

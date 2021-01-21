@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { palette } from 'styled-theme';
-import { borderRadius } from '@iso/lib/helpers/style_utils';
+import { borderRadius } from '@ql/lib/helpers/style_utils';
 
 const CardWrapper = styled.div`
   width: 100%;

@@ -1,7 +1,7 @@
-import Modal from '@iso/components/Feedback/Modal';
+import Modal from '@ql/components/Feedback/Modal';
 import styled from 'styled-components';
 import { palette } from 'styled-theme';
-import WithDirection from '@iso/lib/helpers/rtl';
+import WithDirection from '@ql/lib/helpers/rtl';
 
 const TopbarSearchModal = styled(Modal)`
   &.ant-modal {
@@ -33,9 +33,9 @@ const TopbarSearchModal = styled(Modal)`
           border: 0;
           border-radius: 0;
           padding-left: ${(props) =>
-            props['data-rtl'] === 'rtl' ? '15px' : '55px'};
+    props['data-rtl'] === 'rtl' ? '15px' : '55px'};
           padding-right: ${(props) =>
-            props['data-rtl'] === 'rtl' ? '55px' : '15px'};
+    props['data-rtl'] === 'rtl' ? '55px' : '15px'};
           height: 60px;
           max-height: none;
 
@@ -65,7 +65,7 @@ const TopbarSearchModal = styled(Modal)`
 
           .ant-input-prefix {
             right: ${(props) =>
-              props['data-rtl'] === 'rtl' ? '20px' : 'auto'};
+    props['data-rtl'] === 'rtl' ? '20px' : 'auto'};
             left: ${(props) => (props['data-rtl'] === 'rtl' ? 'auto' : '20px')};
             height: 0;
             position: absolute;

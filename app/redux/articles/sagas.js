@@ -2,12 +2,12 @@ import { all, takeEvery, put, call } from 'redux-saga/effects';
 import actions from './actions';
 import omit from 'lodash/omit';
 import fakeData from './fakeData';
-import { rsf, db } from '@iso/lib/firebase/firebase';
+import { rsf, db } from '@ql/lib/firebase/firebase';
 import {
   convertCollectionsSnapshotToMap,
   deleteDocuments,
   addCollectionAndDocuments,
-} from '@iso/lib/firebase/firebase.util';
+} from '@ql/lib/firebase/firebase.util';
 
 const fakeDataList = new fakeData(5).getAll();
 

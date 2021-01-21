@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 import { palette } from 'styled-theme';
-import WithDirection from '@iso/lib/helpers/rtl';
+import WithDirection from '@ql/lib/helpers/rtl';
 
-import bgImage from '@iso/assets/images/work.jpg';
+import bgImage from '@ql/assets/images/work.jpg';
 
 const SignUpStyleWrapper = styled.div`
   width: 100%;
@@ -116,9 +116,9 @@ const SignUpStyleWrapper = styled.div`
 
           &:first-child {
             margin-right: ${props =>
-              props['data-rtl'] === 'rtl' ? 'inherit' : '20px'};
+    props['data-rtl'] === 'rtl' ? 'inherit' : '20px'};
             margin-left: ${props =>
-              props['data-rtl'] === 'rtl' ? '20px' : 'inherit'};
+    props['data-rtl'] === 'rtl' ? '20px' : 'inherit'};
           }
         }
       }

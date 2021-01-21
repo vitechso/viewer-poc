@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { palette } from 'styled-theme';
-import { transition, borderRadius } from '@iso/lib/helpers/style_utils';
-import WithDirection from '@iso/lib/helpers/rtl';
+import { transition, borderRadius } from '@ql/lib/helpers/style_utils';
+import WithDirection from '@ql/lib/helpers/rtl';
 
 const SidebarWrapper = styled.div`
   .isomorphicSidebar {
@@ -105,7 +105,7 @@ const SidebarWrapper = styled.div`
         svg {
           color: inherit;
           margin: ${(props) =>
-            props['data-rtl'] === 'rtl' ? '0 0 0 30px' : '0 30px 0 0'};
+    props['data-rtl'] === 'rtl' ? '0 0 0 30px' : '0 30px 0 0'};
           ${transition()};
         }
       }
@@ -209,9 +209,9 @@ const SidebarWrapper = styled.div`
       .ant-menu-submenu-vertical {
         > li:not(.ant-menu-item-group) {
           padding-left: ${(props) =>
-            props['data-rtl'] === 'rtl' ? '0px !important' : '74px !important'};
+    props['data-rtl'] === 'rtl' ? '0px !important' : '74px !important'};
           padding-right: ${(props) =>
-            props['data-rtl'] === 'rtl' ? '74px !important' : '0px !important'};
+    props['data-rtl'] === 'rtl' ? '74px !important' : '0px !important'};
           font-size: 13px;
           font-weight: 400;
           margin: 0;

@@ -5,7 +5,7 @@
 import React, { useEffect, useState } from 'react';
 import dynamic from 'next/dynamic';
 import loadOffice from '@ql/components/excel/loadOffice'
-import basicStyle from "@iso/assets/styles/constants";
+import basicStyle from "@ql/styles/constants";
 import ExcelLayoutWrapper from "@ql/components/excel/excelLayoutWrapper";
 import { emit } from "jetemit";
 import { getGlobal } from '@ql/components/excel/commands'

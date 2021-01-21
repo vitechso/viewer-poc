@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { InputSearch } from '@iso/components/uielements/input';
+import { InputSearch } from '@ql/components/uielements/input';
 import TopbarSearchModal from '@ql/styles/TopbarSearchModal.styles';
 import { TopbarSearchIcon } from '@ql/config/icon.config';
 

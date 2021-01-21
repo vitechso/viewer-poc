@@ -1,7 +1,7 @@
 import { all, takeEvery, put, fork } from 'redux-saga/effects';
 import { createBrowserHistory } from 'history';
 
-import { getToken, clearToken } from '@iso/lib/helpers/utility';
+import { getToken, clearToken } from '@ql/lib/helpers/utility';
 import actions from './actions';
 
 const history = createBrowserHistory();
@@ -37,7 +37,7 @@ export function* loginSuccess() {
 }
 
 export function* loginError() {
-  yield takeEvery(actions.LOGIN_ERROR, function* () {});
+  yield takeEvery(actions.LOGIN_ERROR, function* () { });
 }
 
 export function* logout() {

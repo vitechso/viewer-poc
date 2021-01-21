@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 import { palette } from 'styled-theme';
-import WithDirection from '@iso/lib/helpers/rtl';
+import WithDirection from '@ql/lib/helpers/rtl';
 
-import bgImage from '@iso/assets/images/image3.jpg';
+import bgImage from '@ql/assets/images/image3.jpg';
 
 const ForgotPasswordStyleWrapper = styled.div`
   width: 100%;

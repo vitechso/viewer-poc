@@ -1,5 +1,5 @@
 import React from 'react';
-import CodeMirrors from '@iso/components/uielements/codeMirror';
+import CodeMirrors from '@ql/components/uielements/codeMirror';
 import styled from 'styled-components';
 
 const CodeComponentEditor = (props) => <CodeMirrors {...props} />;

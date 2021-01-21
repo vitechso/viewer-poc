@@ -1,11 +1,11 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import Popover from '@ql/components/uielements/popover';
-import authAction from '@ql/auth/actions';
+import authAction from '@ql/redux/auth/actions';
 import TopbarDropdownWrapper from '@ql/styles/TopbarDropdown.styles';
 
 const { logout } = authAction;
-import userpic from '@iso/assets/images/user1.png';
+import userpic from '@ql/assets/images/user1.png';
 
 export default function TopbarUser() {
   const [visible, setVisibility] = React.useState(false);

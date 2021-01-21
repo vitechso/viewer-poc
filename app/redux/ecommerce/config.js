@@ -1,4 +1,4 @@
-import { isServer } from '@iso/lib/helpers/isServer';
+import { isServer } from '@ql/lib/helpers/isServer';
 
 const productDatas = [];
 function getInitData() {

@@ -1,17 +1,17 @@
-import userpic from '@iso/assets/images/user1.png';
-import profilebg from '@iso/assets/images/profile-bg.jpg';
+import userpic from '@ql/assets/images/user1.png';
+import profilebg from '@ql/assets/images/profile-bg.jpg';
 // posts
-import post1 from '@iso/assets/images/posts/1.png';
-import post2 from '@iso/assets/images/posts/2.png';
-import post3 from '@iso/assets/images/posts/3.png';
-import post4 from '@iso/assets/images/posts/4.png';
-import post5 from '@iso/assets/images/posts/5.png';
-import post6 from '@iso/assets/images/posts/6.png';
-import post7 from '@iso/assets/images/posts/7.png';
-import post8 from '@iso/assets/images/posts/8.png';
-import post9 from '@iso/assets/images/posts/9.png';
-import post10 from '@iso/assets/images/posts/10.png';
-import post11 from '@iso/assets/images/posts/11.png';
+import post1 from '@ql/assets/images/posts/1.png';
+import post2 from '@ql/assets/images/posts/2.png';
+import post3 from '@ql/assets/images/posts/3.png';
+import post4 from '@ql/assets/images/posts/4.png';
+import post5 from '@ql/assets/images/posts/5.png';
+import post6 from '@ql/assets/images/posts/6.png';
+import post7 from '@ql/assets/images/posts/7.png';
+import post8 from '@ql/assets/images/posts/8.png';
+import post9 from '@ql/assets/images/posts/9.png';
+import post10 from '@ql/assets/images/posts/10.png';
+import post11 from '@ql/assets/images/posts/11.png';
 
 const profileData = {
   id: 1,

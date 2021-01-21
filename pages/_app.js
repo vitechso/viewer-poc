@@ -3,7 +3,7 @@ import App from 'next/app';
 import { Provider } from 'react-redux';
 import withRedux from 'next-redux-wrapper';
 import ThemeProvider from '@ql/containers/ThemeProvider';
-import initStore from '../redux/store';
+import initStore from '@ql/redux/store';
 import 'antd/dist/antd.css';
 import '@glidejs/glide/dist/css/glide.core.min.css';
 import 'react-quill/dist/quill.snow.css';

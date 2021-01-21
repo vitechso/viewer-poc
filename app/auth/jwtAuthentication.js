@@ -1,4 +1,4 @@
-import jwtConfig from '@iso/config/jwt.config';
+import jwtConfig from '@ql/config/jwt.config';
 import jwtDecode from 'jwt-decode';
 
 class JwtAuth {

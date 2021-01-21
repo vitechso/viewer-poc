@@ -7,14 +7,14 @@ import { Row, Col } from 'antd';
 import { Typography, Space } from 'antd';
 const { Title, Paragraph, Text } = Typography;
 
-import VeturImage from '@iso/assets/images/dateTime/vetur.png';
-import SagitariusImage from '@iso/assets/images/dateTime/sagitarius.png';
-import Group198Image from '@iso/assets/images/dateTime/Group198@2x.png'; //TODO: group? What does this icon show? 
-import DifferenceImage from '@iso/assets/images/dateTime/Difference.png';
-import SunriseImage from '@iso/assets/images/dateTime/Sunrise.png';
-import SunsetImage from '@iso/assets/images/dateTime/Sunset.png';
-import DayLengthImage from '@iso/assets/images/dateTime/day-length.png';
-import MoonStateImage from '@iso/assets/images/dateTime/Moon.png';
+import VeturImage from '@ql/assets/images/dateTime/vetur.png';
+import SagitariusImage from '@ql/assets/images/dateTime/sagitarius.png';
+import Group198Image from '@ql/assets/images/dateTime/Group198@2x.png'; //TODO: group? What does this icon show? 
+import DifferenceImage from '@ql/assets/images/dateTime/Difference.png';
+import SunriseImage from '@ql/assets/images/dateTime/Sunrise.png';
+import SunsetImage from '@ql/assets/images/dateTime/Sunset.png';
+import DayLengthImage from '@ql/assets/images/dateTime/day-length.png';
+import MoonStateImage from '@ql/assets/images/dateTime/Moon.png';
 
 const DateAndTimeInstance = () => {
     let data = useSelector((state) => state.place.data);

@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 import TopbarDropdownWrapper from '@ql/styles/TopbarDropdown.styles';
 import { TopbarMessageIcon } from '@ql/config/icon.config';
 
-import Image from '@iso/assets/images/user3.png';
+import Image from '@ql/assets/images/user3.png';
 
 const demoMassage = [
   {

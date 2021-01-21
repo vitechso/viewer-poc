@@ -2,7 +2,7 @@ import { all, takeLatest, put, call, fork } from 'redux-saga/effects';
 import fetch from 'isomorphic-unfetch';
 
 import { login, logout, removeCookie } from './auth.utils';
-import { notification } from '@iso/components';
+import { notification } from '@ql/components';
 import JwtAuthentication from './jwtAuthentication';
 import actions from './actions';
 

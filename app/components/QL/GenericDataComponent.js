@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import basicStyle from '@ql/styles/constants';
 import { Card, Table, Button } from 'antd';
 import { CheckIfUrl } from '@ql/lib/helpers/utils';
-import grabIcon from '@iso/assets/images/grabicon/Grab-line-Blue-inverted.png';
+import grabIcon from '@ql/assets/images/grabicon/Grab-line-Blue-inverted.png';
 import { lookupByIdentifier, timeseriesByIdentifier } from '@ql/components/excel/commands';
 
 const timeSeriesFields = ["populationMale", "populationFemale", "year", "midPeriod", "founders", "investors", "populationTotal", "populationDensity"];

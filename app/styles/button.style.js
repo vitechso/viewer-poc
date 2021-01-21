@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { palette } from 'styled-theme';
-import { transition } from '@iso/lib/helpers/style_utils';
+import { transition } from '@ql/lib/helpers/style_utils';
 
 const Buttons = (ComponentName) => styled(ComponentName)`
   &.ant-btn {
@@ -36,17 +36,17 @@ const Buttons = (ComponentName) => styled(ComponentName)`
     > .anticon + span,
     > span + .anticon {
       margin: ${(props) =>
-        props['data-rtl'] === 'rtl' ? '0 0.5em 0 0' : '0 0 0 0.5em'};
+    props['data-rtl'] === 'rtl' ? '0 0.5em 0 0' : '0 0 0 0.5em'};
     }
 
     .anticon-right {
       transform: ${(props) =>
-        props['data-rtl'] === 'rtl' ? 'rotate(180deg)' : 'rotate(0)'};
+    props['data-rtl'] === 'rtl' ? 'rotate(180deg)' : 'rotate(0)'};
     }
 
     .anticon-left {
       transform: ${(props) =>
-        props['data-rtl'] === 'rtl' ? 'rotate(180deg)' : 'rotate(0)'};
+    props['data-rtl'] === 'rtl' ? 'rotate(180deg)' : 'rotate(0)'};
     }
 
     &.ant-btn-primary {
@@ -67,10 +67,10 @@ const Buttons = (ComponentName) => styled(ComponentName)`
 
       &.ant-btn-loading:not(.ant-btn-circle):not(.ant-btn-circle-outline) {
         padding: ${(props) =>
-          props['data-rtl'] === 'rtl' ? '0 24px 0 15px' : '0 15px 0 24px'};
+    props['data-rtl'] === 'rtl' ? '0 24px 0 15px' : '0 15px 0 24px'};
         .anticon {
           margin: ${(props) =>
-            props['data-rtl'] === 'rtl' ? '0 -17px 0 0' : '0 0 0 -17px'};
+    props['data-rtl'] === 'rtl' ? '0 -17px 0 0' : '0 0 0 -17px'};
         }
       }
     }
@@ -159,7 +159,7 @@ const Buttons = (ComponentName) => styled(ComponentName)`
     &.ant-btn-loading:not(.ant-btn-circle):not(.ant-btn-circle-outline)
       .anticon {
       margin: ${(props) =>
-        props['data-rtl'] === 'rtl' ? '0 -14px 0 0' : '0 0 0 -14px'};
+    props['data-rtl'] === 'rtl' ? '0 -14px 0 0' : '0 0 0 -14px'};
     }
 
     &.isoButton {
@@ -207,9 +207,9 @@ const Buttons = (ComponentName) => styled(ComponentName)`
 
   + .ant-btn-group {
     margin-left: ${(props) =>
-      props['data-rtl'] === 'rtl' ? '0' : '-1px'} !important;
+    props['data-rtl'] === 'rtl' ? '0' : '-1px'} !important;
     margin-right: ${(props) =>
-      props['data-rtl'] === 'rtl' ? '-1px' : '0'} !important;
+    props['data-rtl'] === 'rtl' ? '-1px' : '0'} !important;
   }
 `;
 
@@ -288,43 +288,43 @@ const ButtonsGroup = (ComponentName) => styled(ComponentName)`
 
     > .ant-btn:first-child:not(:last-child) {
       border-radius: ${(props) =>
-        props['data-rtl'] === 'rtl' ? '0 4px 4px 0' : '4px 0 0 4px'};
+    props['data-rtl'] === 'rtl' ? '0 4px 4px 0' : '4px 0 0 4px'};
     }
 
     > .ant-btn:last-child:not(:first-child) {
       border-radius: ${(props) =>
-        props['data-rtl'] === 'rtl' ? '4px 0 0 4px' : '0 4px 4px 0'};
+    props['data-rtl'] === 'rtl' ? '4px 0 0 4px' : '0 4px 4px 0'};
     }
 
     .ant-btn-primary:last-child:not(:first-child),
     .ant-btn-primary + .ant-btn-primary {
       border-left-color: ${(props) =>
-        props['data-rtl'] === 'rtl'
-          ? palette('primary', 0)
-          : palette('primary', 2)};
+    props['data-rtl'] === 'rtl'
+      ? palette('primary', 0)
+      : palette('primary', 2)};
       border-right-color: ${(props) =>
-        props['data-rtl'] === 'rtl'
-          ? palette('primary', 2)
-          : palette('primary', 0)};
+    props['data-rtl'] === 'rtl'
+      ? palette('primary', 2)
+      : palette('primary', 0)};
     }
 
     .ant-btn-primary:first-child:not(:last-child) {
       border-left-color: ${(props) =>
-        props['data-rtl'] === 'rtl'
-          ? palette('primary', 2)
-          : palette('primary', 0)};
+    props['data-rtl'] === 'rtl'
+      ? palette('primary', 2)
+      : palette('primary', 0)};
       border-right-color: ${(props) =>
-        props['data-rtl'] === 'rtl'
-          ? palette('primary', 0)
-          : palette('primary', 2)};
+    props['data-rtl'] === 'rtl'
+      ? palette('primary', 0)
+      : palette('primary', 2)};
     }
 
     .ant-btn + .ant-btn,
     + .ant-btn {
       margin-left: ${(props) =>
-        props['data-rtl'] === 'rtl' ? '0' : '-1px'} !important;
+    props['data-rtl'] === 'rtl' ? '0' : '-1px'} !important;
       margin-right: ${(props) =>
-        props['data-rtl'] === 'rtl' ? '-1px' : '0'} !important;
+    props['data-rtl'] === 'rtl' ? '-1px' : '0'} !important;
     }
 
     &.ant-btn-group-lg {
@@ -346,9 +346,9 @@ const ButtonsGroup = (ComponentName) => styled(ComponentName)`
 
   &.ant-btn-group + &.ant-btn-group {
     margin-left: ${(props) =>
-      props['data-rtl'] === 'rtl' ? '0' : '-1px'} !important;
+    props['data-rtl'] === 'rtl' ? '0' : '-1px'} !important;
     margin-right: ${(props) =>
-      props['data-rtl'] === 'rtl' ? '-1px' : '0'} !important;
+    props['data-rtl'] === 'rtl' ? '-1px' : '0'} !important;
   }
 `;
 

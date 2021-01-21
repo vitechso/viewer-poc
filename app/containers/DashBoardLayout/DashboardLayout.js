@@ -1,7 +1,7 @@
 import React from 'react';
 import { Layout } from 'antd';
 import Sidebar from '@ql/containers/Sidebar/Sidebar';
-import ThemeSwitcher from '@iso/containers/ThemeSwitcher/ThemeSwitcher';
+import ThemeSwitcher from '@ql/containers/ThemeSwitcher/ThemeSwitcher';
 import Topbar from '@ql/containers/Topbar/Topbar';
 import siteConfig from '@ql/config/site.config';
 import AppHolder from '@ql/styles/DashboardLayout.styles';

@@ -1,23 +1,22 @@
 import { all } from 'redux-saga/effects';
-import authSagas from '@ql/auth/sagas';
-import contactSagas from '@iso/redux/contacts/saga';
-import invoicesSagas from '@iso/redux/invoice/saga';
-import mailSagas from '@iso/redux/mail/saga';
-import notesSagas from '@iso/redux/notes/saga';
-import todosSagas from '@iso/redux/todos/saga';
-import ecommerceSaga from '@iso/redux/ecommerce/saga';
-import cardsSagas from '@iso/redux/card/saga';
-import chatSagas from '@iso/redux/chat/sagas';
-import youtubeSearchSagas from '@iso/redux/youtubeSearch/sagas';
-import githubSagas from '@iso/redux/githubSearch/sagas';
-import articles from '@iso/redux/articles/sagas';
-import investors from '@iso/redux/investors/sagas';
-import scrumBoardSaga from '@iso/redux/scrumBoard/saga';
-import quizSaga from '@iso/redux/quiz/saga';
-
-import profileSaga from '@iso/redux/profile/saga';
-import placeSaga from './place/sagas';
-import timeseriesSaga from './timeseries/sagas';
+import authSagas from '@ql/redux/auth/saga';
+import contactSagas from '@ql/redux/contacts/saga';
+import invoicesSagas from '@ql/redux/invoice/saga';
+import mailSagas from '@ql/redux/mail/saga';
+import notesSagas from '@ql/redux/notes/saga';
+import todosSagas from '@ql/redux/todos/saga';
+import ecommerceSaga from '@ql/redux/ecommerce/saga';
+import cardsSagas from '@ql/redux/card/saga';
+import chatSagas from '@ql/redux/chat/sagas';
+import youtubeSearchSagas from '@ql/redux/youtubeSearch/sagas';
+import githubSagas from '@ql/redux/githubSearch/sagas';
+import articles from '@ql/redux/articles/sagas';
+import investors from '@ql/redux/investors/sagas';
+import scrumBoardSaga from '@ql/redux/scrumBoard/saga';
+import quizSaga from '@ql/redux/quiz/saga';
+import profileSaga from '@ql/redux/profile/saga';
+import placeSaga from '@ql/redux/place/sagas';
+import timeseriesSaga from '@ql/redux/timeseries/sagas';
 
 export default function* rootSaga(getState) {
   yield all([

@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { useSelector } from 'react-redux';
 import Popover from '../uielements/popover';
 import TopbarDropdownWrapper from './topbarDropdown.style';
-import { TopbarMailIcon } from '@iso/config/icon.config';
+import { TopbarMailIcon } from '@ql/config/icon.config';
 
 const demoMails = [
   {

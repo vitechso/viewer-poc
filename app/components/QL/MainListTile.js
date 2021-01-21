@@ -1,10 +1,10 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import basicStyle from '@iso/assets/styles/constants';
-// import LayoutWrapper from '@iso/components/utility/layoutWrapper';
-// import TableWrapper from '@iso/containers/Tables/AntTables/AntTables.styles';
-// import Scrollbars from '@iso/components/utility/customScrollBar';
-// import Box from '@iso/components/utility/box';
+import basicStyle from '@ql/styles/constants';
+// import LayoutWrapper from '@ql/components/utility/layoutWrapper';
+// import TableWrapper from '@ql/containers/Tables/AntTables/AntTables.styles';
+// import Scrollbars from '@ql/components/utility/customScrollBar';
+// import Box from '@ql/components/utility/box';
 import { Table, Tag, Space } from 'antd';
 import { Image, Card } from 'antd';
 import { Typography, Divider } from 'antd';

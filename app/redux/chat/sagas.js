@@ -1,11 +1,11 @@
 import { all, takeEvery, put, call, fork, select } from 'redux-saga/effects';
 import actions from './actions';
-import { rsf, db } from '@iso/lib/firebase/firebase';
+import { rsf, db } from '@ql/lib/firebase/firebase';
 import {
   getDocuments,
   getDocumentsByQuery,
   addDocument,
-} from '@iso/lib/firebase/firebase.util';
+} from '@ql/lib/firebase/firebase.util';
 const getSelectedChatRoom = (state) => state.Chat.selectedChatRoom;
 const reverseString = (str) => str.split('').reverse().join('');
 

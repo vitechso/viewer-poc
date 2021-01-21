@@ -10,7 +10,7 @@ import IntlMessages from '@ql/components/utility/intlMessages';
 import jwtConfig from '@ql/config/jwt.config';
 import Auth0 from '@ql/auth/Auth0';
 import FirebaseLogin from '@ql/containers/FirebaseForm/FirebaseForm';
-import authActions from '@ql/auth/actions';
+import authActions from '@ql/redux/auth/actions';
 import SignInStyleWrapper from '@ql/styles/SignIn.styles';
 
 const { login } = authActions;

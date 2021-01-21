@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { palette } from 'styled-theme';
-import { transition } from '@iso/lib/helpers/style_utils';
+import { transition } from '@ql/lib/helpers/style_utils';
 
 const AntSelect = (ComponentName) => styled(ComponentName)`
   &.ant-select {
@@ -35,7 +35,7 @@ const AntSelect = (ComponentName) => styled(ComponentName)`
         .ant-select-selection-selected-value {
           float: ${(props) => (props['data-rtl'] === 'rtl' ? 'right' : 'left')};
           padding: ${(props) =>
-            props['data-rtl'] === 'rtl' ? '0 0 0 14px' : '0 14px 0 0'};
+    props['data-rtl'] === 'rtl' ? '0 0 0 14px' : '0 14px 0 0'};
         }
       }
 

@@ -6,7 +6,7 @@ import { ThemeProvider } from 'styled-components';
 import themes from '@ql/config/theme/theme.config';
 import AppLocale from '@ql/config/translation';
 import useWindowSize from '@ql/lib/hooks/useWindowSize';
-import appActions from '@iso/redux/app/actions';
+import appActions from '@ql/redux/app/actions';
 
 const { toggleAll } = appActions;
 

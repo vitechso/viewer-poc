@@ -4,7 +4,7 @@ import { Layout } from 'antd';
 import { Scrollbars } from 'react-custom-scrollbars';
 import Menu from '@ql/components/uielements/menu';
 import IntlMessages from '@ql/components/utility/intlMessages';
-import appActions from '@iso/redux/app/actions';
+import appActions from '@ql/redux/app/actions';
 import Logo from '@ql/components/utility/Logo.next';
 import SidebarWrapper from '@ql/styles/Sidebar.styles';
 import SidebarMenu from './SidebarMenu';

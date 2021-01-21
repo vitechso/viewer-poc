@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { palette, font } from 'styled-theme';
-import WithDirection from '@iso/lib/helpers/rtl';
+import WithDirection from '@ql/lib/helpers/rtl';
 const QuillEditor = styled.div`
   .ql-editor {
     min-height: 215px;
@@ -14,12 +14,12 @@ const QuillEditor = styled.div`
 
     .ql-formats {
       margin: ${(props) =>
-        props['data-rtl'] === 'rtl' ? '0 0 0 15px' : '0 15px 0 0'};
+    props['data-rtl'] === 'rtl' ? '0 0 0 15px' : '0 15px 0 0'};
     }
 
     .ql-picker-label {
       padding: ${(props) =>
-        props['data-rtl'] === 'rtl' ? '0 8px 0 2px' : '0 2px 0 8px'};
+    props['data-rtl'] === 'rtl' ? '0 8px 0 2px' : '0 2px 0 8px'};
 
       &:not(.ql-color-picker):not(.ql-icon-picker) {
         svg {

@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { Row, Col } from 'antd';
-import PageHeader from '@iso/components/utility/pageHeader';
-import Box from '@iso/components/utility/box';
-import LayoutWrapper from '@iso/components/utility/layoutWrapper';
-import ContentHolder from '@iso/components/utility/contentHolder';
-import basicStyle from '@iso/assets/styles/constants';
+import PageHeader from '@ql/components/utility/pageHeader';
+import Box from '@ql/components/utility/box';
+import LayoutWrapper from '@ql/components/utility/layoutWrapper';
+import ContentHolder from '@ql/components/utility/contentHolder';
+import basicStyle from '@ql/styles/constants';
 import * as configs from './config';
 import GoogleChart from 'react-google-charts';
 
@@ -13,7 +13,7 @@ export default class ReCharts extends Component {
     const chartEvents = [
       {
         eventName: 'select',
-        callback(Chart) {},
+        callback(Chart) { },
       },
     ];
     const { rowStyle, colStyle, gutter } = basicStyle;
