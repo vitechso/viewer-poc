@@ -4,17 +4,17 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import React, { useEffect, useState } from 'react';
 import dynamic from 'next/dynamic';
-import loadOffice from '../../Components/excel/loadOffice'
+import loadOffice from '@ql/components/excel/loadOffice'
 import basicStyle from "@iso/assets/styles/constants";
-import ExcelLayoutWrapper from "../../Components/excel/excelLayoutWrapper";
+import ExcelLayoutWrapper from "@ql/components/excel/excelLayoutWrapper";
 import { emit } from "jetemit";
-import { getGlobal } from '../../Components/excel/commands'
+import { getGlobal } from '@ql/components/excel/commands'
 import {
 	ensureStateInitialized,
 	updateRibbon,
 	monitorSheetChanges,
 	removeSetting
-} from '../../Components/excel/utilities/office-apis-helpers';
+} from '@ql/components/excel/utilities/office-apis-helpers';
 import {
 	fuzzy,
 	lookup,
@@ -23,10 +23,10 @@ import {
 	timeseriesfiltered,
 	stream,
 	validate
-} from '../../Components/excel/functions';
-import ExcelLayout from '../../containers-ql/DashBoardLayout/ExcelLayout';
+} from '@ql/components/excel/functions';
+import ExcelLayout from '@ql/containers/DashBoardLayout/ExcelLayout';
 
-const OfficeWrapper = dynamic(() => import('../../Components/excel/officeWrapper'), {
+const OfficeWrapper = dynamic(() => import('@ql/components/excel/officeWrapper'), {
 	loading: () => <p>Loading...</p>,
 	ssr: false
 });

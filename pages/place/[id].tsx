@@ -1,31 +1,32 @@
+// @ts-nocheck
 import React, { useState, useEffect, useCallback } from "react";
 import dynamic from "next/dynamic";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import { Row, Col } from "antd";
-import basicStyle from "@iso/assets/styles/constants";
-import LayoutWrapper from "../../shared/components/utility/layoutWrapper";
-import DashboardLayout from "../../containers-ql/DashBoardLayout/DashboardLayout";
+import basicStyle from "@ql/styles/constants";
+import LayoutWrapper from "@ql/components/utility/layoutWrapper";
+import DashboardLayout from "@ql/containers/DashBoardLayout/DashboardLayout";
 import { useSelector, useDispatch } from "react-redux";
 import placeActions from "../../redux/place/actions";
 import timeseriesActions from "../../redux/timeseries/actions";
-import MainTile from "../../Components/QL/MainTile";
-import GeoLocation from "../../Components/QL/GeoLocation";
-import RelationsGraph from "../../Components/QL/RelationsGraph";
-import AvailableTimeSeries from "../../Components/QL/AvailableTimeSeries";
-import StatisticsViewer from "../../Components/QL/StatisticsViewer";
-import StatisticalOverView from "../../Components/QL/StatisticalOverView";
-import Events from "../../Components/QL/Events";
-import SpecialDays from "../../Components/QL/SpecialDays";
-import UpcomingSignificantDates from "../../Components/QL/UpcomingSignificantDates";
-import DateAndTime from "../../Components/QL/DateAndTime";
-import IdentifierList from "../../Components/QL/IdentifierList";
-import MainListTile from "../../Components/QL/MainListTile";
-import Weather from "../../Components/QL/Weather";
-import Demographics from "../../Components/QL/Demographics";
-import Population from "../../Components/QL/Population";
+import MainTile from "@ql/components/QL/MainTile";
+import GeoLocation from "@ql/components/QL/GeoLocation";
+import RelationsGraph from "@ql/components/QL/RelationsGraph";
+import AvailableTimeSeries from "@ql/components/QL/AvailableTimeSeries";
+import StatisticsViewer from "@ql/components/QL/StatisticsViewer";
+import StatisticalOverView from "@ql/components/QL/StatisticalOverView";
+import Events from "@ql/components/QL/Events";
+import SpecialDays from "@ql/components/QL/SpecialDays";
+import UpcomingSignificantDates from "@ql/components/QL/UpcomingSignificantDates";
+import DateAndTime from "@ql/components/QL/DateAndTime";
+import IdentifierList from "@ql/components/QL/IdentifierList";
+import MainListTile from "@ql/components/QL/MainListTile";
+import Weather from "@ql/components/QL/Weather";
+import Demographics from "@ql/components/QL/Demographics";
+import Population from "@ql/components/QL/Population";
 
-const ShowJsonFromQLApi = dynamic(() => import("../../Components/Common/Code"), { ssr: false });
+const ShowJsonFromQLApi = dynamic(() => import("@ql/components/Common/Code"), { ssr: false });
 
 const place = () => {
   const router = useRouter();

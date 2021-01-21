@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
 
-const FunctionsWrapper = dynamic(() => import('../../../Components/excel/functionsWrapper'), {
+const FunctionsWrapper = dynamic(() => import('@ql/components/excel/functionsWrapper'), {
 	loading: () => <p>Loading...</p>,
 	ssr: false
 });
